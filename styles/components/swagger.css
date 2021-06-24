@@ -1,7 +1,7 @@
 .swagger-ui .wrapper {
     max-width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 2px;
 }
 
 .swagger-ui .info .title {
@@ -10,6 +10,18 @@
     margin-top: 0.35294118em;
     margin-bottom: 0.25em;
     color: var(--primary-color);
+}
+
+.swagger-ui table tbody tr td {
+    padding: 0!important;
+}
+
+.swagger-ui table thead tr td, .swagger-ui table thead tr th {
+    padding: 0!important;
+}
+
+.swagger-ui table thead tr td, .swagger-ui table thead tr th{
+    padding: 0!important;
 }
 
 .swagger-ui .info {
