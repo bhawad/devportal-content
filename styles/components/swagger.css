@@ -13,15 +13,15 @@
 }
 
 .swagger-ui table tbody tr td {
-    padding: 0!important;
+    padding: 2px!important;
 }
 
 .swagger-ui table thead tr td, .swagger-ui table thead tr th {
-    padding: 0!important;
+    padding: 2px!important;
 }
 
 .swagger-ui table thead tr td, .swagger-ui table thead tr th{
-    padding: 0!important;
+    padding: 2px!important;
 }
 
 .swagger-ui .info {
