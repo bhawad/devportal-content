@@ -9,7 +9,7 @@
     {{end}}
   {{end}}
     <div>
-        <strong>APIs</strong>
+        <strong>Retail Backend Services</strong>
         <ul>
         {{range $i, $element := .S.K8sStore.Slice }}
             {{$svc := $element.Service}}
@@ -20,7 +20,7 @@
             {{if $element.Metadata.HasDoc}}
             <li>
                 <a class="{{$class}}" href="{{$.Prefix}}doc/{{$svc.Namespace}}/{{$svc.Name}}">
-                    {{$svc.Namespace}}.{{$svc.Name}}
+                    {{$svc.Name}} Service
                 </a>
             </li>
             {{end}}
@@ -30,33 +30,4 @@
         {{end}}
         </ul>
     </div>
-    <br />
-    <div>
-        <strong>Reference</strong>
-        <ul>
-            {{range $i, $page := $.Pages}}
-                {{$class := ""}}
-                {{if eq $.CurrentPage $page}}
-                    {{$class = "c-nav__selected"}}
-                {{end}}
-                <li><a class="{{$class}}" href="{{$.Prefix}}page/{{$page}}">{{$page}}</a></li>
-            {{end}}
-        </ul>
-    </div>
-    {{if $haveOther}}
-    <br />
-    <div>
-        <strong>Services without documentation</strong>
-        <ul>
-        {{range $i, $element := .S.K8sStore.Slice }}
-            {{$svc := $element.Service}}
-            {{if not $element.Metadata.HasDoc}}
-            <li>
-                <samp>{{$svc.Namespace}}.{{$svc.Name}}</samp>
-            </li>
-            {{end}}
-        {{end}}
-        </ul>
-    </div>
-    {{end}}
 </nav>
