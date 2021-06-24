@@ -3,22 +3,15 @@
     {{end}}
 </span>
 
-# Welcome to the Ambassador Dev Portal
-
-## Customizing the Portal
-
-This content is fully customizable for your specific needs. 
-For details on customizing the portal, see https://www.getambassador.io/reference/dev-portal.
+# Nomitri Retail Backend Developer Portal
 
 ## Available Services
-
-The following services are exposed through this Ambassador instance:
 
 <table cellpadding="2em" width="100%">
     <thead>
         <tr>
-            <td><b>Service Name</b></td>
-            <td><b>Swagger URL</b></td>
+            <td><b>Service</b></td>
+            <td><b>Documentation</b></td>
         </tr>
     </thead>
     <tbody>
