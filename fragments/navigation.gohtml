@@ -1,13 +1,4 @@
 <nav class="o-page__nav c-nav">
-  {{$haveApi := false}}
-  {{$haveOther := false}}
-  {{range $i, $element := .S.K8sStore.Slice }}
-    {{if $element.Metadata.HasDoc}}
-      {{$haveApi = true}}
-    {{else}}
-      {{$haveOther = true}}
-    {{end}}
-  {{end}}
     <div>
         <strong>Retail Backend Services</strong>
         <ul>
@@ -24,9 +15,6 @@
                 </a>
             </li>
             {{end}}
-        {{end}}
-        {{if not $haveApi}}
-        <li><samp>None</samp></li>
         {{end}}
         </ul>
     </div>
