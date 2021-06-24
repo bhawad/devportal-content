@@ -17,18 +17,14 @@
     <tbody>
         {{range $i, $element := .S.K8sStore.Slice }}
             {{if $element.Metadata.HasDoc}}
-                {{if isEven $i }}
-                    <tr style="background: rgba(86,61,124,.05);">
-                {{else}}
-                    <tr>
-                {{end}}
+                <tr>
                         <td>
                             <samp>{{$element.Service.Namespace}}.{{$element.Service.Name}}</samp>
                         </td>
                         <td>
                             <a href="{{$.Prefix}}doc/{{$element.Service.Namespace}}/{{$element.Service.Name}}"><code>API Documentation</code></a>
                         </td>
-                    </tr>
+                </tr>
             {{end}}
         {{end}}
     </tbody>
