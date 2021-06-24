@@ -19,7 +19,7 @@
             {{if $element.Metadata.HasDoc}}
                 <tr>
                         <td>
-                            <samp>{{$element.Service.Namespace}}.{{$element.Service.Name}}</samp>
+                            <samp>{{$element.Service.Name}} service</samp>
                         </td>
                         <td>
                             <a href="{{$.Prefix}}doc/{{$element.Service.Namespace}}/{{$element.Service.Name}}"><code>API Documentation</code></a>
