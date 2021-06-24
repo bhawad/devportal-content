@@ -2,7 +2,7 @@
     <div>
         <strong>Retail Backend Services</strong>
         <ul>
-        {{range $i, $element := .S.K8sStore.Slice }}
+        {{range $i, $element := 10 }}
             {{$svc := $element.Service}}
             {{$class := ""}}
             {{if and (eq $.CurrentService $svc.Name) (eq $.CurrentNamespace $svc.Namespace)}}
