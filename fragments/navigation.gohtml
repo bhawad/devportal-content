@@ -8,13 +8,14 @@
             {{if and (eq $.CurrentService $svc.Name) (eq $.CurrentNamespace $svc.Namespace)}}
                 {{$class = "c-nav__selected"}}
             {{end}}
-            {{if $element.Metadata.HasDoc}}
             <li>
+            {{$svc.Name}} :
+            {{if $element.Metadata.HasDoc}}
                 <a class="{{$class}}" href="{{$.Prefix}}doc/{{$svc.Namespace}}/{{$svc.Name}}">
-                    {{$svc.Name}} Service
+                    {{$svc.Name}} service
                 </a>
-            </li>
             {{end}}
+            </li>
         {{end}}
         </ul>
     </div>
